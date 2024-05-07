@@ -1,0 +1,30 @@
+package sample;
+
+import robocode.*;
+
+import java.awt.*;
+
+public class PinkShockRobot extends Robot {
+
+    public void run() {
+        // Define a cor do robô para rosa choque
+        setBodyColor(Color.PINK);
+        setGunColor(Color.PINK);
+        setRadarColor(Color.PINK);
+
+        // Define a velocidade do robô
+        setMaxVelocity(8);
+
+        // Loop infinito para mover o robô continuamente
+        while (true) {
+            ahead(100); // Move para frente
+            turnRight(90); // Vira 90 graus para a direita
+            ahead(100); // Move para frente
+            turnRight(90); // Vira 90 graus para a direita
+            ahead(100); // Move para frente
+            turnRight(90); // Vira 90 graus para a direita
+            ahead(100); // Move para frente
+            turnRight(90); // Vira 90 graus para a direita
+        }
+    }
+}
